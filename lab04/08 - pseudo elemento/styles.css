@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Exemplo de ::before e ::after */
+.quote {
+    position: relative;
+    padding: 30px 20px;
+    margin: 20px;
+    background-color: #e9f7ef;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.quote::before {
+    content: "“";
+    font-size: 3em;
+    color: #76d7c4;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.quote::after {
+    content: "“";
+    font-size: 3em;
+    color: #76d7c4;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+/* Exemplo de ::first-line */
+.intro::first-line {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #00796b;
+}
+
+/* Exemplo de ::first-letter */
+.highlight::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff5722;
+    float: left;
+    margin-right: 5px;
+    line-height: 1;
+}

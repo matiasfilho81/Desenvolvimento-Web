@@ -1,0 +1,93 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333333;
+    color: #ff9800;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #ff9800;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Estilo para o menu de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc80;
+    text-decoration: underline;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    margin-top: 30px;
+}
+
+h2 {
+    color: #ff9800;
+}
+
+/* Estilo para o formulário */
+form label {
+    color: #ffcc80;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ff9800;
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+form input[type="submit"] {
+    background-color: #ff9800;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ffcc80;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333333;
+    color: #ffcc80;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 3px solid #ff9800;
+}

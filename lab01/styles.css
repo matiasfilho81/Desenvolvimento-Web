@@ -1,0 +1,25 @@
+/* Exemplo de Código CSS: */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: gray;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}

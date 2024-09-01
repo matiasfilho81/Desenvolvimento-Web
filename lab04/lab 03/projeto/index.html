@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles-dark.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <p>Esta é a página principal do site. Navegue pelos links acima para saber mais.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site</p>
+    </footer>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+
+    <link id="theme-style" rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <p>Esta é a página principal do site. Navegue pelos links acima para saber mais.</p>
+        <button id="toggle-theme">Trocar Tema</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site</p>
+    </footer>
+
+
+    <script>
+        document.getElementById('toggle-theme').addEventListener('click', function () {
+            const themeStyle = document.getElementById('theme-style');
+            if (themeStyle.getAttribute('href') === 'styles.css') {
+                themeStyle.setAttribute('href', 'styles-dark.css'); // Nome do segundo CSS
+            } else {
+                themeStyle.setAttribute('href', 'styles.css');
+            }
+        });
+    </script>
+
+</body>
+</html> 

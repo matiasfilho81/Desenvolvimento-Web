@@ -1,0 +1,81 @@
+/* Estilo geral para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Cabeçalho */
+#header {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegação */
+#nav {
+    background-color: #004d40;
+    padding: 10px;
+    text-align: center;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+#main-content {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os rótulos e campos do formulário */
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form button:hover {
+    background-color: #004d40;
+}
+
+/* Rodapé */
+#footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

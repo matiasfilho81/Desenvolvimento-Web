@@ -1,0 +1,60 @@
+/* Estilo geral para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navegação */
+nav {
+    background-color: #004d40;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modelo de Caixa */
+.box-model {
+    width: 250px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0px;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Exemplo para alterar as propriedades de modelo de caixa */
+.box-model-modified {
+    width: 300px; /* Aumenta a largura */
+    padding: 20px; /* Aumenta o padding */
+    border: 10px solid blue; /* Aumenta a borda */
+    margin: 15px; /* Aumenta a margem */
+    background-color: #ffc107; /* Muda a cor de fundo */
+}

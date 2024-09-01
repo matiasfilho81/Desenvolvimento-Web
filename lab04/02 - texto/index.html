@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Propriedades CSS para Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Exemplo de Formatação de Textos com CSS</h1>
+
+    <h2>Alinhamento e Cor</h2>
+    <p class="main">Este parágrafo está justificado e usa a cor DarkBlue. A fonte utilizada é Helvetica com tamanho de 12pt. A primeira linha deste parágrafo possui um recuo de 4pt.</p>
+
+    <h2>Decoração de Texto</h2>
+    <p class="underline">Este parágrafo está sublinhado.</p>
+    <p class="overline">Este parágrafo tem uma linha acima.</p>
+    <p class="line-through">Este parágrafo está riscado.</p>
+
+    <h2>Transformação de Texto</h2>
+    <p class="uppercase">Este texto está em maiúsculas.</p>
+    <p class="lowercase">ESTE TEXTO ESTÁ EM MINÚSCULAS.</p>
+    <p class="capitalize">este texto tem a primeira letra de cada palavra em maiúscula.</p>
+
+    <h2>Outras Propriedades de Texto</h2>
+    <p class="letter-spacing">Este texto possui espaçamento entre as letras aumentado.</p>
+    <p class="line-height">Este texto possui uma maior distância entre as linhas.</p>
+
+</body>
+</html>
+
+
+    <!-- Script para trocar o tema -->
+    <script>
+        document.getElementById('toggle-theme').addEventListener('click', function () {
+            const themeStyle = document.getElementById('theme-style');
+            if (themeStyle.getAttribute('href') === 'styles.css') {
+                themeStyle.setAttribute('href', 'styles-dark.css'); // Nome do segundo CSS
+            } else {
+                themeStyle.setAttribute('href', 'styles.css');
+            }
+        });
+    </script>

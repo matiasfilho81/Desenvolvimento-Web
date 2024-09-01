@@ -1,0 +1,58 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Verdana, Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho com Posicionamento Normal */
+h2 {
+    color: #333;
+}
+
+/* Cabeçalho com Posicionamento Relativo */
+.header_pos {
+    position: relative;
+    top: -50px;
+    color: #00796b;
+}
+
+/* Imagem com Posicionamento Relativo */
+.img_pos {
+    position: relative;
+    bottom: 40px;
+    left: 120px;
+}
+
+/* Estilo para o Parágrafo */
+p {
+    font-size: 1.3em;
+}
+
+/* Estilo para a Tag SPAN com Posicionamento Relativo */
+span {
+    color: red;
+    font-size: .6em;
+    height: 1em;
+}
+
+.super {
+    position: relative;
+    top: -1ex;
+}
+
+.sub {
+    position: relative;
+    bottom: -1ex;
+}
+
+.shiftleft {
+    position: relative;
+    left: -1ex;
+}
+
+.shiftright {
+    position: relative;
+    right: -1ex;
+}

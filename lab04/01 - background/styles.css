@@ -1,0 +1,57 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para os títulos */
+h1, h2 {
+    color: #333;
+}
+
+/* Exemplo de background-color */
+.background-color {
+    background-color: #6495ed;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Exemplo de background-image */
+.background-image {
+    background-image: url('https://i.gifer.com/7tBq.gif');
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Exemplo de background-repeat */
+.background-repeat {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/018/760/382/small_2x/abstract-colorful-gradient-texture-for-vintage-photo-overlay-png.png');
+    background-repeat: repeat-x;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Exemplo de background-position */
+.background-position {
+    background-image: url('https://www.vhv.rs/dpng/d/550-5505151_tree-of-life-clipart-with-roots-hd-png.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Exemplo de background-attachment */
+.background-attachment {
+    background-image: url('https://www.vhv.rs/dpng/d/550-5505151_tree-of-life-clipart-with-roots-hd-png.png');
+    background-attachment: fixed;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}

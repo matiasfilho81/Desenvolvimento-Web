@@ -1,0 +1,121 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para os links em diferentes estados */
+a:link {
+    color: #FF0000; /* Cor para link não visitado */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00FF00; /* Cor para link visitado */
+}
+
+a:hover {
+    color: #FF00FF; /* Cor para link quando o mouse passa por cima */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000FF; /* Cor para link no momento do clique */
+}
+
+/* Estilo para listas não ordenadas */
+ul.a {
+    list-style-type: circle; /* Primeiro nível de lista usa círculos */
+}
+
+ul.b {
+    list-style-type: square; /* Segundo nível de lista usa quadrados */
+}
+
+ul.c {
+    list-style-type: none; /* Terceiro nível de lista sem marcador */
+}
+
+/* Estilo para listas ordenadas */
+ol.roman {
+    list-style-type: upper-roman; /* Lista ordenada com números romanos */
+}
+
+ol.alpha {
+    list-style-type: lower-alpha; /* Lista ordenada com letras minúsculas */
+}
+
+/* Estilo para lista com imagem como marcador */
+ul.image-marker {
+    list-style-type: none; /* Remove o marcador padrão */
+}
+
+ul.image-marker li {
+    position: relative;
+    padding-left: 20px; /* Espaço para o marcador */
+}
+
+ul.image-marker li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('sqpurple.gif');
+    background-size: 10px 10px; /* Define o tamanho da imagem */
+    width: 10px; /* Largura do marcador */
+    height: 10px; /* Altura do marcador */
+    background-repeat: no-repeat;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para o título */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Diferentes formatações dentro do parágrafo */
+p span.bold {
+    font-weight: bold; /* Texto em negrito */
+}
+
+p span.italic {
+    font-style: italic; /* Texto em itálico */
+}
+
+p span.highlight {
+    background-color: #ffff99; /* Destaque com cor de fundo amarela */
+}
+
+p span.underline {
+    text-decoration: underline; /* Texto sublinhado */
+}
+
+p span.color-red {
+    color: #FF0000; /* Texto em vermelho */
+}
+
+p span.bg-yellow {
+    background-color: yellow; /* Fundo amarelo para o texto */
+    padding: 2px 4px; /* Adiciona um pouco de espaçamento ao redor do texto */
+}
+
+p span.font-large {
+    font-size: 1.5em; /* Aumenta o tamanho da fonte */
+}
+
+p span.bordered {
+    border: 2px solid #000000; /* Adiciona uma borda ao redor do texto */
+    padding: 2px 4px; /* Adiciona espaçamento dentro da borda */
+}

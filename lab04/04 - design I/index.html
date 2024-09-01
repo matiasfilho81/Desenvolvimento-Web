@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos - PUC-Campinas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <div id="header">
+        <h1>Cadastro de Alunos - PUC-Campinas</h1>
+    </div>
+
+    <!-- Links de Navegação -->
+    <div id="nav">
+        <a href="index.html">Voltar para a Página Inicial</a> |
+        <a href="http://www.puc-campinas.edu.br" target="_blank">Página do PUC-Campinas</a>
+    </div>
+
+    <!-- Conteúdo Principal (Formulário) -->
+    <div id="main-content">
+        <h2>Preencha o Formulário Abaixo:</h2>
+        <form>
+            <label for="first-name">Nome:</label>
+            <input type="text" id="first-name" name="first-name" required><br><br>
+            
+            <label for="last-name">Sobrenome:</label>
+            <input type="text" id="last-name" name="last-name" required><br><br>
+
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula" required><br><br>
+
+            <label for="campus">Campus:</label>
+            <select id="campus" name="campus" required>
+                <option value="campinas-i">Campinas I</option>
+                <option value="campinas-ii">Campinas II</option>
+                <option value="campinas-iii">Campinas Parque dos Leões</option>
+            </select><br><br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="footer">
+        <p>Esta página foi desenvolvida por <strong>Seu Nome Aqui</strong></p>
+    </div>
+
+</body>
+</html>
