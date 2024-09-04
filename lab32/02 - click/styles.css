@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+#quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+#quadrado.aparecer {
+    display: block;
+}
