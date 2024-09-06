@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação: Back-End</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explicação: Front-End e Back-End</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Front-End</a></li>
+                <li><a href="backend.html">Back-End</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>O que é o Back-End?</h2>
+            <p>O <strong>Back-End</strong> é a parte de um site ou aplicação web que fica "por trás das cenas". Ele é responsável pela lógica do servidor, armazenamento de dados, autenticação e comunicação com APIs. Algumas das principais tecnologias utilizadas no back-end são:</p>
+            <ul>
+                <li><strong>Node.js:</strong> Um ambiente JavaScript de execução no servidor.</li>
+                <li><strong>Python (com Django/Flask):</strong> Amplamente utilizado para desenvolvimento web.</li>
+                <li><strong>Bancos de Dados:</strong> Como MySQL, PostgreSQL, MongoDB, que armazenam dados da aplicação.</li>
+            </ul>
+        </section>
+
+        <section id="crud">
+            <h2>O que é um CRUD?</h2>
+            <p>CRUD é um acrônimo para <strong>Create, Read, Update, Delete</strong> (Criar, Ler, Atualizar, Deletar) e refere-se às quatro operações fundamentais em sistemas de gerenciamento de dados. Vamos detalhar cada uma dessas operações:</p>
+            <ul>
+                <li><strong>Create (Criar):</strong> Inserir novos dados no banco de dados.</li>
+                <li><strong>Read (Ler):</strong> Recuperar dados existentes do banco de dados.</li>
+                <li><strong>Update (Atualizar):</strong> Modificar dados existentes no banco de dados.</li>
+                <li><strong>Delete (Deletar):</strong> Remover dados do banco de dados.</li>
+            </ul>
+
+            <h3>Exemplo de CRUD em Node.js:</h3>
+            <pre>
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+const User = require('./models/User'); // Model de Usuário
+
+// Criar novo usuário (Create)
+app.post('/users', (req, res) => {
+    const newUser = new User(req.body);
+    newUser.save().then(user => res.status(201).send(user));
+});
+
+// Ler todos os usuários (Read)
+app.get('/users', (req, res) => {
+    User.find().then(users => res.status(200).send(users));
+});
+
+// Atualizar um usuário (Update)
+app.put('/users/:id', (req, res) => {
+    User.findByIdAndUpdate(req.params.id, req.body, { new: true })
+        .then(user => res.status(200).send(user));
+});
+
+// Deletar um usuário (Delete)
+app.delete('/users/:id', (req, res) => {
+    User.findByIdAndDelete(req.params.id).then(() => res.status(204).send());
+});
+
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000');
+});
+            </pre>
+        </section>
+
+        <section id="tecnologias-backend">
+            <h2>Tecnologias do Back-End</h2>
+            <p>Além de suportar CRUD, o Back-End lida com outras funções, como autenticação de usuários, integração de APIs, e gerenciamento de lógica de negócios. Aqui estão algumas das ferramentas mais comuns usadas no desenvolvimento Back-End:</p>
+            <ul>
+                <li><strong>Node.js:</strong> Ambiente para executar JavaScript no servidor.</li>
+                <li><strong>Express.js:</strong> Framework web rápido e minimalista para Node.js.</li>
+                <li><strong>MongoDB:</strong> Banco de dados NoSQL orientado a documentos.</li>
+                <li><strong>MySQL:</strong> Um dos sistemas de gerenciamento de banco de dados mais usados.</li>
+                <li><strong>API REST:</strong> Interfaces que permitem a comunicação entre sistemas diferentes.</li>
+            </ul>
+        </section>
+    </main>
+
+    <a href="https://coodesh.com/blog/dicionario/o-que-e-crud/#:~:text=Primeiramente%2C%20CRUD%20%C3%A9%20o%20acr%C3%B4nimo,sua%20m%C3%A1quina%20ou%20na%20nuvem.">O que é CRUD?</a>
+
+
+    <footer>
+        <p>&copy; 2024 Explicação sobre Front-End e Back-End</p>
+    </footer>
+
+</body>
+</html>
