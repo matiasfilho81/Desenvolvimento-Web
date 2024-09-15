@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+#question-container div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block; /* Faz cada resposta aparecer em uma nova linha */
+}
