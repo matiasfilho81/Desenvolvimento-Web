@@ -18,6 +18,26 @@ const questions = [
             "document.getElement('p').innerHTML = 'Hello World!';"
         ],
         correctAnswer: 0
+    },
+    {
+        question: "What does HTML stand for?",
+        answers: ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyperlink Tool Markup Language"],
+        correctAnswer: 0
+    },
+    {
+        question: "Which HTML element is used to define an internal stylesheet?",
+        answers: ["script", "css", "style", "link"],
+        correctAnswer: 2
+    },
+    {
+        question: "What is the correct JavaScript syntax to change the content of the HTML element below?\n<p id='demo'>This is a demonstration.</p>",
+        answers: [
+            "document.getElementById('demo').innerHTML = 'Hello World!';",
+            "document.getElementByName('p').innerHTML = 'Hello World!';",
+            "#demo.innerHTML = 'Hello World!';",
+            "document.getElement('p').innerHTML = 'Hello World!';"
+        ],
+        correctAnswer: 0
     }
 ];
 
